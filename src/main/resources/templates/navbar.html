@@ -1,0 +1,54 @@
+<nav data-th-fragment="navbar" class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <a data-th-href="@{/home}" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img data-th-src="@{'images/contact.png'}" 
+                class="h-8 shadow rounded-full" alt="SCM Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SCM</span>
+        </a>
+        <!-- brand logo ended -->
+        <div class="flex gap-2 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            
+            <!-- dark light theme -->
+            <button id="change_theme_button"
+                class="bg-gray-200 text-black rounded-lg dark:rounded-lg px-4 py-2 dark:bg-gray-600 dark:text-white">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Light</span></button>
+            
+            <!-- login button -->
+            <a
+                data-th-href="@{'/login'}"
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none rounded-lg px-4 py-2 font-medium dark:focus:ring-blue-800 dark:bg-blue-800 dark:hover:bg-blue-600"
+            >
+                Login
+            </a>
+            <a
+                data-th-href="@{'/register'}"
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none rounded-lg px-4 py-2 font-medium dark:focus:ring-green-800 dark:bg-green-800 dark:hover:bg-green-600"
+            >
+                Signup
+            </a>
+        </div>
+    </div>
+    <nav class="bg-gray-50 dark:bg-gray-700">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+            <div class="flex items-center">
+                <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                    <li>
+                        <a data-th-href="@{/home}" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a data-th-href="@{/about}" class="text-gray-900 dark:text-white hover:underline">About</a>
+                    </li>
+                    <li>
+                        <a data-th-href="@{/services}" class="text-gray-900 dark:text-white hover:underline">Services</a>
+                    </li>
+                    <li>
+                        <a data-th-href="@{/contact}" class="text-gray-900 dark:text-white hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
