@@ -41,6 +41,8 @@ public class User {
     private Boolean enabled=false;
     private boolean emailVerified = false;  //by default false
     private boolean phoneVerified = false;
+    private boolean twiterVerified = false;
+    private boolean facebookVerified = false;
 
     //self, google, facebook, github, linkedin
     @Enumerated(value = EnumType.STRING)
@@ -51,4 +53,3 @@ public class User {
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL, fetch = FetchType.LAZY,orphanRemoval = true) //cascade means user update means all updated
     private List <Contact> contacts = new ArrayList<>();
 }
-
